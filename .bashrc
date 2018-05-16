@@ -90,7 +90,7 @@ git_info() {
 #PS1='[\u@\h \W]\$ '
 
 set_bash_prompt(){
-	PS1="(\[\033[1;36m\]\u\[\033[0m\] at \[\033[1;34m\]\H\[\033[0m\] in \[\033[1;35m\]\w\[\033[0m\] $(virtualenv_info)$(git_info)> "
+	PS1="<In \[\033[1;35m\]\w\[\033[0m\] $(virtualenv_info)\n $(git_info)> "
 }
 
 PROMPT_COMMAND=set_bash_prompt
