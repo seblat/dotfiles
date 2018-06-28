@@ -52,11 +52,32 @@ alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
 # git aliases
+source /usr/share/bash-completion/completions/git #import completions
+
+alias g="git"
+complete -o default -o nospace -F _git g
+
+alias gs="git status"
+__git_complete gs _git_status
+
 alias gc="git checkout"
+__git_complete gc _git_checkout
+
 alias gh="git push"
+__git_complete gh _git_push
+
 alias gp="git pull"
+__git_complete gp _git_pull
+
 alias gr="git rebase"
+__git_complete gr _git_rebase
+
 alias gri="git rebase -i"
+__git_complete gri _git_rebase
+
+alias gst="git stash"
+
+alias gl="git log"
 
 # custom virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
