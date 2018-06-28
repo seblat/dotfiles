@@ -43,7 +43,6 @@ export PATH=$PATH:$HOME/.local/bin
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # easier completion
-bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 
 # faster cd upwards
@@ -51,6 +50,13 @@ alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+
+# git aliases
+alias gc="git checkout"
+alias gh="git push"
+alias gp="git pull"
+alias gr="git rebase"
+alias gri="git rebase -i"
 
 # custom virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
@@ -94,4 +100,3 @@ set_bash_prompt(){
 }
 
 PROMPT_COMMAND=set_bash_prompt
-
