@@ -51,6 +51,11 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
+# test alias
+
+alias t="./test.sh"
+
+
 # git aliases
 source /usr/share/bash-completion/completions/git #import completions
 
@@ -66,6 +71,9 @@ __git_complete gc _git_checkout
 alias gh="git push"
 __git_complete gh _git_push
 
+alias ghf="git push -f"
+__git_complete gh _git_push
+
 alias gp="git pull"
 __git_complete gp _git_pull
 
@@ -78,6 +86,14 @@ __git_complete gri _git_rebase
 alias gst="git stash"
 
 alias gl="git log"
+alias glp="git log -p"
+
+alias gta="git commit -a"
+alias gtax="git commit -a --amend --no-edit"
+alias gtaxm="git commit -a --amend"
+
+
+alias dcbu="docker-compose build && docker-compose up"
 
 # custom virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
