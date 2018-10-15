@@ -88,6 +88,7 @@ alias gst="git stash"
 alias gl="git log"
 alias glp="git log -p"
 
+alias gt="git commit --allow-empty"
 alias gta="git commit -a"
 alias gtax="git commit -a --amend --no-edit"
 alias gtaxm="git commit -a --amend"
