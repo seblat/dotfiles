@@ -1,0 +1,10 @@
+
+'.source.python':
+  'debug.print':
+    'prefix': 'dp'
+    'body': 'print(f"\\\\n\\\\n debugging of $1: {$1}\\\\n\\\\n")'
+
+'.source.python':
+  'debug.log':
+    'prefix': 'dl'
+    'body': 'import logging\nlogger = logging.getLogger("django.server")\nlogger.warning(f"\\\\n\\\\n logging of $1: {$1}\\\\n\\\\n")'
