@@ -7,3 +7,7 @@
   'debug.log':
     'prefix': 'dl'
     'body': 'import logging\nlogger = logging.getLogger("django.server")\nlogger.warning(f"\\\\n\\\\n logging of $1: {$1}\\\\n\\\\n")'
+
+  'debug.pdb':
+    'prefix': 'd'
+    'body': 'import pdb; pdb.set_trace()'
