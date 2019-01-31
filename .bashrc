@@ -62,6 +62,12 @@ source /usr/share/bash-completion/completions/git #import completions
 alias g="git"
 complete -o default -o nospace -F _git g
 
+alias ga="git add"
+__git_complete ga _git_add
+
+alias gaa="git add *"
+__git_complete ga _git_add
+
 alias gs="git status"
 __git_complete gs _git_status
 
@@ -85,13 +91,20 @@ __git_complete gri _git_rebase
 
 alias gst="git stash"
 
-alias gl="git log"
+alias gl="git log --oneline -3"
 alias glp="git log -p"
 
+alias gap="git add --patch"
+__git_complete gap _git_add
+
 alias gt="git commit --allow-empty"
+alias gtm="git commit --allow-empty -m"
+alias gtx="git commit --amend --no-edit"
 alias gta="git commit -a"
 alias gtax="git commit -a --amend --no-edit"
-alias gtaxm="git commit -a --amend"
+alias gtaxe="git commit -a --amend"
+
+alias gd="git diff"
 
 
 alias dcbu="docker-compose build && docker-compose up"
