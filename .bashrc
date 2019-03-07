@@ -100,12 +100,19 @@ __git_complete gap _git_add
 alias gt="git commit --allow-empty"
 alias gtm="git commit --allow-empty -m"
 alias gtx="git commit --amend --no-edit"
+alias gtxe="git commit --amend"
 alias gta="git commit -a"
 alias gtax="git commit -a --amend --no-edit"
 alias gtaxe="git commit -a --amend"
 
 alias gd="git diff"
 
+alias gg="git grep --heading --break -n" 
+
+# More aliases
+
+alias dcu="docker-compose up"
+alias db="docker build"
 
 alias dcbu="docker-compose build && docker-compose up"
 
