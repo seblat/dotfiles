@@ -10,7 +10,7 @@
 
   'debug.pdb':
     'prefix': 'd'
-    'body': 'import pdb; pdb.set_trace()'
+    'body': 'import ipdb; ipdb.set_trace()'
 
   'assert.ErrorIn':
     'prefix': 'aei'
